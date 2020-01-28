@@ -2,49 +2,51 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Dialogflow Bulk Intents</title>
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
-  <!-- Your custom styles (optional) -->
-  <link href="css/style.min.css" rel="stylesheet">
-  <style type="text/css">
-    html,
-    body,
-    header,
-    .view {
-      height: 100%;
-    }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.min.css" rel="stylesheet">
+    <style type="text/css">
 
-    @media (max-width: 740px) {
       html,
       body,
       header,
-      .view {
-        height: 1000px;
+      .carousel {
+        height: 60vh;
       }
-    }
 
-    @media (min-width: 800px) and (max-width: 850px) {
-      html,
-      body,
-      header,
-      .view {
-        height: 650px;
+      @media (max-width: 740px) {
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
       }
-    }
-    @media (min-width: 800px) and (max-width: 850px) {
+
+      @media (min-width: 800px) and (max-width: 850px) {
+        html,
+        body,
+        header,
+        .carousel {
+          height: 100vh;
+        }
+      }
+
+      @media (min-width: 800px) and (max-width: 850px) {
               .navbar:not(.top-nav-collapse) {
                   background: #1C2331!important;
               }
           }
-  </style>
+    </style>
 </head>
 
 <body>
@@ -55,7 +57,7 @@
 
       <!-- Brand -->
       <a class="navbar-brand" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
-        <strong>DevIA</strong>
+        <strong>MDB</strong>
       </a>
 
       <!-- Collapse -->
@@ -75,11 +77,14 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">Tutorial</a>
+            <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About MDB</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/" target="_blank">About Us</a>
-          </li>                    
+            <a class="nav-link" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">Free download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">Free tutorials</a>
+          </li>
         </ul>
 
         <!-- Right -->
@@ -97,7 +102,7 @@
           <li class="nav-item">
             <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded"
               target="_blank">
-              <i class="fab fa-youtube mr-2"></i><b>DevIA</b>
+              <i class="fab fa-github mr-2"></i>MDB GitHub
             </a>
           </li>
         </ul>
@@ -108,93 +113,141 @@
   </nav>
   <!-- Navbar -->
 
-  <!-- Full Page Intro -->
-  <div class="view full-page-intro" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg'); background-repeat: no-repeat; background-size: cover;">
+  <!--Carousel Wrapper-->
+  <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
 
-    <!-- Mask & flexbox options-->
-    <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
 
-      <!-- Content -->
-      <div class="container">
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
 
-        <!--Grid row-->
-        <div class="row wow fadeIn">
+      <!--First slide-->
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/93.jpg'); background-repeat: no-repeat; background-size: cover;">
 
-          <!--Grid column-->
-          <div class="col-md-6 mb-4 white-text text-center text-md-left">
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
 
-            <h1 class="display-4 font-weight-bold">Dialogflow Bulk Intents Convert</h1>
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Learn Bootstrap 4 with MDB</strong>
+              </h1>
 
-            <hr class="hr-light">
+              <p>
+                <strong>Best & free guide of responsive web design</strong>
+              </p>
 
-            <p>
-              <strong>Create your Intents in excel, and let us do the magic!</strong>
-            </p>
+              <p class="mb-4 d-none d-md-block">
+                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
+                  available. Create your own, stunning website.</strong>
+              </p>
 
-            <p class="mb-4 d-none d-md-block">
-              <strong>Just download our Excel template, add your intents, phrases and answers as many as you want,
-                just remember every phrase or answer is separate by a pipe "|". <a><u>Follow our short tutorial</u></a>.
-              </strong>
-            </p>
-
-            <a href="https://whalther.github.io/dialogflowIntents/TemplateIntents.xlsx" class="btn btn-indigo btn-lg">Download .xlsx template
-              <i class="fas fa-graduation-cap ml-2"></i>
-            </a>
-
-          </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div class="col-md-6 col-xl-5 mb-4">
-
-            <!--Card-->
-            <div class="card">
-
-              <!--Card content-->
-              <div class="card-body">
-
-                <!-- Form -->
-                <form action="https://nodetezwapp.azurewebsites.net/api/user" method="post" enctype="multipart/form-data">
-                  <!-- Heading -->                  
-                  <h3 class="dark-grey-text text-center">
-                    <strong>Convert Intents to .zip</strong>
-                  </h3>
-                  <hr>
-
-                  <div class="md-form">
-                    Upload your .xlsx file formated according to the template.
-                    <input type="file" id="file" name="file" class="form-control" style="border: 0px solid #ced4da">
-                  </div>  
-
-                  <div class="text-center">
-                    <button class="btn btn-indigo">Convert</button>
-                    <hr>
-                    <fieldset class="form-check">
-                    </fieldset>
-                  </div>
-
-                </form>
-                <!-- Form -->
-
-              </div>
-
+              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start free tutorial
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
             </div>
-            <!--/.Card-->
+            <!-- Content -->
 
           </div>
-          <!--Grid column-->
+          <!-- Mask & flexbox options-->
 
         </div>
-        <!--Grid row-->
-
       </div>
-      <!-- Content -->
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/94.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Learn Bootstrap 4 with MDB</strong>
+              </h1>
+
+              <p>
+                <strong>Best & free guide of responsive web design</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
+                  available. Create your own, stunning website.</strong>
+              </p>
+
+              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start free tutorial
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/92.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Learn Bootstrap 4 with MDB</strong>
+              </h1>
+
+              <p>
+                <strong>Best & free guide of responsive web design</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users. Video and written versions
+                  available. Create your own, stunning website.</strong>
+              </p>
+
+              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg">Start free tutorial
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
 
     </div>
-    <!-- Mask & flexbox options-->
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
 
   </div>
-  <!-- Full Page Intro -->
+  <!--/.Carousel Wrapper-->
 
   <!--Main layout-->
   <main>
@@ -688,16 +741,16 @@
   </footer>
   <!--/.Footer-->
 
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!-- Initializations -->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+      <!-- Initializations -->
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
